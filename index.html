@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ana Beatriz Rosa - Portfólio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- particulas -->
+    <div class="particulas"></div>
+
+    <!-- Menu de navegação -->
+    <header>
+        <nav class="navegacao">
+            <ul class="menu">
+                <li><a class="menu-link" href="#sobre">Sobre Mim</a></li>
+                <li><a class="menu-link" href="#formacao">Formação</a></li>
+                <li><a class="menu-link" href="#portfolio">Portfólio</a></li>
+                <li><a class="menu-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SOBRE MIM-->
+    <main>
+        <section class="apresentacao" id="sobre">
+            <figure>
+                <img class="foto-perfil" src="imagens/foto-beatriz.jpg" alt="Foto de Beatriz Rosa" />
+            </figure>
+
+            <h1>Beatriz Rosa</h1>
+            <p class="funcao">Desenvolvedora Front End</p>
+        </section>
+
+        <section class="sobre">
+            <h2 class="sobre-titulo">Sobre Mim</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                    Olá! Sou estudante de Análise e Desenvolvimento de Sistemas e estou em busca de oportunidades para
+                    aplicar, na prática, os conhecimentos que venho adquirindo durante minha formação.<br>Sou dedicada,
+                    curiosa e sempre aberta a aprender algo novo. Acredito no poder da tecnologia para transformar
+                    realidades e tenho vontade de fazer parte dessa mudança, contribuindo com soluções criativas e
+                    funcionais.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="sobre" id="formacao">
+            <!-- FACULDADE -->
+            <h2 class="sobre-titulo">Formação Acadêmica</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                    Análise e Desenvolvimento de Sistemas
+                </p>
+                <p class="sobre-paragrafo">
+                    Universidade Uninter<br>
+                    Início: 07/2024 — Previsão de conclusão: 12/2026<br>
+                    2º período (atual)
+                </p>
+            </div>
+
+
+            <!-- CURSOS -->
+            <h2 class="sobre-titulo">Cursos</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                <ul class="lista">
+                    <li>Introdução ao HTML5 e CSS3</li>
+                    <li>Fundamentos de JavaScript</li>
+                    <li>Estruturação de sites com HTML semântico</li>
+                    <li>Estilização com CSS puro (sem frameworks)</li>
+                    <li>Organização de páginas web multi-seções</li>
+                    <li>Uso básico de Git e GitHub para versionamento</li>
+                    <li>Criação de formulários HTML com campos de entrada</li>
+                    <li>Fundamentos de Python</li>
+                    <li>Prática de programação orientada a objetos em Java</li>
+                    <li>Prática introdutória de Banco de dados MySQL</li>
+                </ul>
+            </div>
+
+            <!-- IDIOMAS -->
+            <h2 class="sobre-titulo">Idiomas</h2>
+            <div class="sobre-caixa">
+                <p class=>
+                <ul class="lista">
+                    <li>Português — Nativo</li>
+                    <li>Inglês — Intermediário</li>
+                </ul>
+                </p>
+                <p class="sobre-paragrafo">
+
+                </p>
+            </div>
+        </section>
+
+        <!-- PORTFÓLIO -->
+        <section class="projetos" id="portfolio">
+            <h2 class="projetos-titulo">Meus projetos</h2>
+
+            <div class="projetos-caixa">
+                <div class="projetos-card">
+                    <img src="imagens/projeto-login.png" alt="Projeto 1" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="projetos-info">Projeto-login</h3>
+                        <p class="projetos-paragrafo">Um projeto que simula uma página de login. Com base HTML/CSS e
+                            responsividade.</p>
+                        <a href="https://beaowll.github.io/projeto-login/" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="projetos-card">
+                    <img src="imagens/projeto-agencia.png" alt="Projeto 2" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="projetos-info">Projeto-agência</h3>
+                        <p class="projetos-paragrafo">Um projeto de uma agência com design moderno, feito com HTML e CSS puro.</p>
+                        <a href="https://beaowll.github.io/Projeto-htmlcss/#" target="_blank" class="botao-saiba-mais">Saiba mais</a> 
+                    </div>
+                </div>
+
+                <div class="projetos-card">
+                    <img src="imagens/projeto-tecnologica.png" alt="Projeto 3" class="projetos-imagem">
+                    <div class="caixa-textos-projeto">
+                        <h3 class="projetos-info">Projeto-TecnoLógica</h3>
+                        <p class="projetos-paragrafo">Um projeto desenvolvido na faculdade com HTML e CSS.</p>
+                        <a href="https://beaowll.github.io/Projeto-TecnoLogica/index.html" target="_blank" class="botao-saiba-mais">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="contatos" id="contato">
+            <h2 class="contatos-titulo">Entre em Contato</h2>
+            <form class="contatos-formulario" onsubmit="enviarWhats(event)"> <!-- chama função de enviar -->
+                <div class="grupo-form"><input id="nome" class="campo-form" placeholder="Nome"></div>
+                <div class="grupo-form"><input type="email" id="email" class="campo-form" placeholder="Email"></div>
+                <div class="grupo-form">
+                    <textarea id="mensagem" class="campo-form" placeholder="Digite sua mensagem" rows="6"></textarea>
+                </div>
+                <button type="submit" class="botao-form">Enviar WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2025 Ana Beatriz Rosa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script função botão whatsapp-->
+    <script>
+
+        function enviarWhats(event) {
+            event.preventDefault(); // impede o recarregamento da página
+
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5511978707278'; //meu numero wpp
+
+
+            const texto = `Olá! Me chamo ${nome}, e‑mail: ${email}. ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            // abre o WhatsApp Web/app em nova aba
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>
